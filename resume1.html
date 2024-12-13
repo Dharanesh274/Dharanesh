@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - A4 Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .resume {
+            display: grid;
+            grid-template-columns: 1fr 3fr; /* 25:75 ratio */
+            gap: 20px;
+            max-width: 210mm; /* A4 width */
+            height: 297mm; /* A4 height */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            border-bottom: 2px solid #5ee6eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar p,
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #222;
+        }
+
+        .content section {
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            font-size: 1.2em;
+            color: #222;
+            border-bottom: 2px solid #5ee6eb;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .content p,
+        .content ul li {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        [contenteditable="true"] {
+            padding: 2px;
+        }
+
+        [contenteditable="true"]:focus {
+            outline: 2px solid #007BFF;
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Sidebar (30%) -->
+        <div class="sidebar"><br><br><br><br>
+            <section>
+                <h2>Contact Info</h2>
+                <p contenteditable="true">&#9993; Email: john.doe@example.com</p>
+                <p contenteditable="true">&#9742; Phone: (123) 456-7890</p>
+                <p contenteditable="true">&#127760; Location: City, State</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul contenteditable="true">
+                    <li>JavaScript, Python, Java</li>
+                    <li>React, Node.js, Django</li>
+                    <li>Git, Docker, AWS</li>
+                </ul>
+                <br>
+                <div class="Languages known">
+                    <h2>Languages</h2>
+                    <ul contenteditable="true">
+                        <li>English</li>
+                        <li>hindi</li>
+                        <li>Tamil</li>
+                        <li>Malayalam</li>
+                        <li>telugu</li>
+                    </ul>
+                    <div class="Certifications">
+                        <h2>Certifications</h2>
+                        <ul contenteditable="true">
+                            <li>MSoffice AI automation </li>
+                            <li>completed MongoDB node.js course</li>
+                            
+                            
+                        </ul>
+            </section>
+        </div>
+
+        <!-- Main Content (75%) -->
+        <div class="content">
+            <header>
+                <h1 contenteditable="true">Dharanesh</h1>
+                <p contenteditable="true">Software Engineer</p>
+            </header>
+
+            <section class="summary" contenteditable="true">
+                <h2>Professional Summary</h2>
+                <p>Innovative and results-driven software engineer with 5+ years of experience developing cutting-edge applications. Adept at problem-solving, collaborating with cross-functional teams, and delivering high-quality code.</p>
+            </section>
+
+            <section class="experience" contenteditable="true">
+                <h2>Experience</h2>
+                <div>
+                    <h3>Senior Software Engineer</h3>
+                    <p>XYZ Corporation | 2020 - Present</p>
+                    <ul>
+                        <li>Designed and developed scalable web applications using React and Node.js.</li>
+                        <li>Improved application performance by 25% through code optimization.</li>
+                        <li>Led a team of 5 developers to deliver high-impact projects.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Software Engineer</h3>
+                    <p>ABC Technologies | 2017 - 2020</p>
+                    <ul>
+                        <li>Developed APIs and backend services using Python and Django.</li>
+                        <li>Automated workflows, reducing manual tasks by 40%.</li>
+                        <li>Collaborated with product teams to define technical requirements.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education" contenteditable="true">
+                <h2>Education</h2>
+                <div>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>University of Technology | 2013 - 2017</p>
+                    
+                    <p>Completed High school | 2013</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

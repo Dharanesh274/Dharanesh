@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Templates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #243b55;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .template-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .template {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .template h3 {
+            margin-top: 0;
+            color: #5ee6eb;
+        }
+        .edit-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #5ee6eb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .edit-btn:hover {
+            background: #40b6ba;
+        }
+        .resume-content {
+            font-family: Arial, sans-serif;
+            white-space: pre-wrap;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            overflow: auto;
+            max-height: 300px;
+        }
+        .edit-area {
+            display: none;
+        }
+        .save-btn {
+            background: #5ee6eb;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .save-btn:hover {
+            background: #40b6ba;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume Templates</h1>
+    </header>
+    <main>
+        <div class="template-container">
+            <!-- Template 1 -->
+            <div class="template">
+                <h3>Template 1</h3>
+                <div class="resume-content" id="template-1-display">
+                    <strong>Name:</strong> John Doe<br>
+                    <strong>Professional Summary:</strong> Results-oriented software engineer with 5+ years of experience.<br>
+                    <strong>Experience:</strong> Senior Developer at XYZ Corp.<br>
+                    <strong>Education:</strong> B.Sc. in Computer Science<br>
+                </div>
+                <textarea class="edit-area" id="template-1-edit"></textarea>
+                <button class="save-btn" onclick="saveTemplate('1')">Save</button>
+                <a href="javascript:void(0)" class="edit-btn" onclick="editTemplate('1')">Edit</a>
+            </div>
+
+            <!-- Template 2 -->
+            <div class="template">
+                <h3>Template 2</h3>
+                <div class="resume-content" id="template-2-display">
+                    <strong>Name:</strong> Jane Smith<br>
+                    <strong>Objective:</strong> To obtain a marketing position that leverages my communication skills.<br>
+                    <strong>Experience:</strong> Marketing Coordinator at ABC Inc.<br>
+                    <strong>Skills:</strong> SEO, Content Writing, Analytics<br>
+                </div>
+                <textarea class="edit-area" id="template-2-edit"></textarea>
+                <button class="save-btn" onclick="saveTemplate('2')">Save</button>
+                <a href="javascript:void(0)" class="edit-btn" onclick="editTemplate('2')">Edit</a>
+            </div>
+
+            <!-- Add more templates similarly -->
+        </div>
+    </main>
+    <script>
+        function editTemplate(templateId) {
+            const display = document.getElementById(`template-${templateId}-display`);
+            const editArea = document.getElementById(`template-${templateId-edit}`);
+            editArea.value = display.innerHTML.replace(/<br>/g, "\n");
+            display.style.display = "none";
+            editArea.style.display = "block";
+        }
+
+        function saveTemplate(templateId) {
+            const display = document.getElementById(`template-${templateId}-display`);
+            const editArea = document.getElementById(`template-${templateId-edit}`);
+            display.innerHTML = editArea.value.replace(/\n/g, "<br>");
+            editArea.style.display = "none";
+            display.style.display = "block";
+        }
+    </script>
+</body>
+</html>

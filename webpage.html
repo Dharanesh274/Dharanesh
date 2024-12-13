@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #f3f3f3;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1b2838;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            color: #5ee6eb;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            color: #c1c1c1;
+            font-size: 1.2em;
+        }
+
+        /* Main Section */
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .description {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            line-height: 1.8em;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            background: #5ee6eb;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            background: #40b6ba;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Features Section */
+        .features {
+            margin-top: 50px;
+        }
+        .features h2 {
+            margin-bottom: 20px;
+        }
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .feature {
+            background: #1e3a47;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #5ee6eb;
+        }
+        .feature p {
+            color: #d4d4d4;
+            font-size: 0.95em;
+        }
+
+        /* Footer Section */
+        footer {
+            margin-top: 50px;
+            background: #1b2838;
+            text-align: center;
+            padding: 20px;
+            color: #c1c1c1;
+        }
+        footer a {
+            color: #5ee6eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+        <p>Create professional resumes in just a few clicks!</p>
+    </header>
+
+    <main class="main-content">
+        <div class="description">
+            Welcome to the Resume Builder! Our tool helps you craft stunning, professional resumes quickly and easily. Select from a variety of templates and customize your resume to make it stand out from the crowd.
+        </div>
+        <div class="btn-container">
+            <a href="create-resume.html" class="btn">Create Resume</a>
+            
+        </div>
+
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Modern Templates</h3>
+                    <p>Choose from a range of modern, professional templates that are ATS-friendly and easy to customize.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>Customizable</h3>
+                    <p>Fully customize your resume with your details, preferred fonts, colors, and layouts.</p>
+                </div>
+                <div class="feature">
+                    <h3>Instant Download</h3>
+                    <p>Download your completed resume as a PDF instantly and start applying for jobs right away!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Resume Builder. Built with passion to help you succeed. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

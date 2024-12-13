@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Resume</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .resume {
+            display: flex;
+            flex-direction: row;
+            width: 297mm; /* A4 Landscape Width */
+            height: 210mm; /* A4 Landscape Height */
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 35%;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .sidebar p {
+            margin: 5px 0;
+            text-align: center;
+            font-size: 0.95em;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 0.9em;
+            text-align: left;
+        }
+
+        .main-content {
+            width: 75%;
+            padding: 30px;
+        }
+
+        .main-content h2 {
+            font-size: 1.5em;
+            color: #2575fc;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2575fc;
+            padding-bottom: 5px;
+        }
+
+        .main-content section {
+            margin-bottom: 20px;
+        }
+
+        .main-content p,
+        .main-content ul li {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        [contenteditable="true"] {
+            padding: 2px;
+        }
+
+        [contenteditable="true"]:focus {
+            outline: 2px dashed #6a11cb;
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="image1.jpg" alt="Profile Picture" contenteditable="true">
+            <h1 contenteditable="true">Dharanesh</h1>
+            <p contenteditable="true">Event Manager | Public Speaker</p>
+            <h2>Contact Info</h2>
+            <p contenteditable="true">&#9993; samuel@example.com</p>
+            <p contenteditable="true">&#9742; (123) 456-7890</p>
+            <p contenteditable="true">&#127760; City, State</p>
+            <h2>Skills</h2>
+            <ul contenteditable="true">
+                <li>Team Leadership</li>
+                <li>Event Coordination</li>
+                <li>Time Management</li>
+                <li>Public Relations</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section>
+                <h2>Professional Summary</h2>
+                <p contenteditable="true">Dynamic and highly motivated event manager with over 7 years of experience coordinating diverse events and leading high-performing teams. Skilled in delivering exceptional results under tight deadlines.</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <div contenteditable="true">
+                    <h3>Senior Event Manager</h3>
+                    <p>XYZ Events | 2018 - Present</p>
+                    <ul>
+                        <li>Managed over 100 high-profile events annually, ensuring seamless execution.</li>
+                        <li>Reduced costs by 20% through vendor negotiations and efficient resource allocation.</li>
+                        <li>Received "Best Event Manager" award for 3 consecutive years.</li>
+                    </ul>
+                </div>
+                <div contenteditable="true">
+                    <h3>Assistant Event Coordinator</h3>
+                    <p>ABC Solutions | 2015 - 2018</p>
+                    <ul>
+                        <li>Supported coordination of large-scale corporate events.</li>
+                        <li>Assisted with budgeting, logistics, and client communications.</li>
+                        <li>Introduced new tools to streamline event planning workflows.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div contenteditable="true">
+                    <h3>Bachelor of Arts in Event Management</h3>
+                    <p>University of City | 2011 - 2015</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications</h2>
+                <ul contenteditable="true">
+                    <li>Certified Meeting Professional (CMP)</li>
+                    <li>Advanced Event Budgeting Certification</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <ul contenteditable="true">
+                    <li>English (Fluent)</li>
+                    <li>Spanish (Intermediate)</li>
+                    <li>French (Basic)</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
